@@ -1,0 +1,43 @@
+/* src/index.css */
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  background-color: theme('colors.darkBlue');
+  color: theme('colors.lightestSlate');
+}
+
+/* src/index.css */
+a {
+  transition: color 0.3s;
+}
+
+button, .btn {
+  transition: background-color 0.3s;
+}
+/* src/index.css */
+
+.sidebar-tooltip {
+  @apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md text-white bg-gray-900 text-xs font-bold transition-all duration-100 scale-0 origin-left;
+}
+.sidebar-item {
+  @apply relative flex items-center justify-center h-16 w-16 mt-2 mb-2 mx-auto;
+}
+
+.sidebar-icon {
+  @apply flex items-center justify-center h-full w-full hover:bg-teal hover:text-lightBlue transition-colors duration-300;
+}
+
+.sidebar-text {
+  @apply absolute text-xs font-bold text-lightestSlate;
+  transform: rotate(90deg);
+  transform-origin: left bottom;
+  bottom: 50%;
+  left: 100%;
+  margin-left: 0.5rem;
+}
