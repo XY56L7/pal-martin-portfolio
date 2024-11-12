@@ -1,84 +1,77 @@
-// src/app/components/Projects.tsx
+// src/components/Projects.tsx
 "use client";
 
 import React from 'react';
 import Image from 'next/image';
-import {
-  FaReact,
-  FaAngular,
-  FaNodeJs,
-  FaPython,
-  FaDatabase,
-} from 'react-icons/fa';
+import { FaPython, FaAngular, FaJsSquare, FaDatabase } from 'react-icons/fa';
+import { SiCsharp, SiDotnet, SiDjango } from 'react-icons/si';
 
-type Technology = 'react' | 'angular' | 'nodejs' | 'python' | 'database';
+type Tech = 'Python' | 'Django' | 'Angular' | 'JavaScript' | 'CSharp' | 'DotNet' | 'Database';
 
-interface Project {
+const techIcons: Record<Tech, JSX.Element> = {
+  Python: <FaPython className="text-yellow-500" />,
+  Django: <SiDjango className="text-green-700" />,
+  Angular: <FaAngular className="text-red-700" />,
+  JavaScript: <FaJsSquare className="text-yellow-300" />,
+  CSharp: <SiCsharp className="text-purple-600" />,
+  DotNet: <SiDotnet className="text-blue-600" />,
+  Database: <FaDatabase className="text-blue-500" />,
+};
+
+type Project = {
   title: string;
   description: string;
+  image: string;
   link: string;
-  imageUrl: string;
-  technologies: Technology[];
-}
-
-const techIcons: Record<Technology, JSX.Element> = {
-  react: <FaReact size={24} className="text-blue-500" title="React" />,
-  angular: <FaAngular size={24} className="text-red-500" title="Angular" />,
-  nodejs: <FaNodeJs size={24} className="text-green-500" title="Node.js" />,
-  python: <FaPython size={24} className="text-yellow-500" title="Python" />,
-  database: <FaDatabase size={24} className="text-gray-500" title="Database" />,
+  technologies: Tech[];
 };
 
 const projects: Project[] = [
   {
-    title: 'Project 1',
-    description: 'Description of project 1.',
-    link: 'https://github.com/your-github/project1',
-    imageUrl: '/images/project1.png',
-    technologies: ['react', 'nodejs', 'database'],
+    title: 'Projekt 1',
+    description: 'Projekt 1 leírása...',
+    image: '/images/project1.jpg',
+    link: 'https://project1.example.com',
+    technologies: ['Python', 'Django', 'Angular'],
   },
-  {
-    title: 'Project 2',
-    description: 'Description of project 2.',
-    link: 'https://github.com/your-github/project2',
-    imageUrl: '/images/project2.png',
-    technologies: ['angular', 'python'],
-  },
-  // Add more projects as needed
+  // További projektek...
 ];
 
 const Projects: React.FC = () => {
   return (
-    <section id="projects" className="py-20 bg-lightBlue text-lightestSlate">
+    <section id="projects" className="py-20 bg-lightBlue text-darkBlue">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-12">Projects</h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <h2 className="text-3xl font-bold mb-12 text-center text-lightestSlate">Projektek</h2>
+        <div className="flex flex-wrap">
           {projects.map((project, index) => (
-            <div key={index} className="bg-darkBlue p-6 rounded-lg shadow-lg">
-              <Image
-                src={project.imageUrl}
-                alt={project.title}
-                width={500}
-                height={300}
-                className="rounded"
-              />
-              <h3 className="text-2xl font-semibold mt-4">{project.title}</h3>
-              <p className="text-slate mt-2">{project.description}</p>
-              <div className="flex space-x-2 mt-4">
-                {project.technologies.map((tech, idx) => (
-                  <div key={idx}>
-                    {techIcons[tech]}
+            <div key={index} className="w-full md:w-1/2 mb-8">
+              <div className="bg-darkBlue rounded-lg overflow-hidden shadow-lg mx-4">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  width={600} // A kép méretének megfelelően módosítsd
+                  height={300}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-4 md:p-6">
+                  <h3 className="text-xl font-bold mb-2 text-lightestSlate">{project.title}</h3>
+                  <p className="text-slate mb-4">{project.description}</p>
+                  {/* Technológiai ikonok megjelenítése */}
+                  <div className="flex space-x-2 mb-4">
+                    {project.technologies.map((tech, idx) => (
+                      <span key={idx}>{techIcons[tech]}</span>
+                    ))}
                   </div>
-                ))}
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-teal hover:text-lightestSlate"
+                  >
+                    Tovább &rarr;
+                  </a>
+                </div>
               </div>
-              <a
-                href={project.link}
-                className="text-teal mt-4 inline-block hover:underline"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View Details &rarr;
-              </a>
             </div>
           ))}
         </div>
