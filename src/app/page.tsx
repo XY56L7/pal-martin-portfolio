@@ -1,4 +1,6 @@
-// src/App.js
+// src/App.tsx
+"use client";
+
 import React from 'react';
 import Sidebar from './components/Sidebar';
 import TopBar from './components/TopBar';
@@ -7,12 +9,12 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
-function App() {
+const App: React.FC = () => {
   return (
     <div>
       <Sidebar />
       <TopBar />
-      <main className="ml-16 mt-16">
+      <main className="pt-16 md:pt-0 md:ml-16">
         <About />
         <Projects />
         <Contact />
@@ -20,6 +22,6 @@ function App() {
       </main>
     </div>
   );
-}
+};
 
 export default App;

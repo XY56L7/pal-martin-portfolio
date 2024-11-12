@@ -25,6 +25,7 @@ button, .btn {
 .sidebar-tooltip {
   @apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md text-white bg-gray-900 text-xs font-bold transition-all duration-100 scale-0 origin-left;
 }
+/* Sidebar stílusok */
 .sidebar-item {
   @apply relative flex items-center justify-center h-16 w-16 mt-2 mb-2 mx-auto;
 }
@@ -34,7 +35,7 @@ button, .btn {
 }
 
 .sidebar-text {
-  @apply absolute text-xs font-bold text-lightestSlate;
+  @apply absolute text-xs font-bold text-lightestSlate hidden md:block;
   transform: rotate(90deg);
   transform-origin: left bottom;
   bottom: 50%;
