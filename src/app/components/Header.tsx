@@ -24,14 +24,14 @@ function Header() {
             Contact
           </a>
           <a
-            href="/assets/cv/Pal_Martin_CV_PDF.pdf"
+            href="/public/Pal_Martin_CV_PDF.pdf"
             className="bg-secondary text-white px-4 py-2 rounded hover:bg-opacity-90"
             download
           >
             Download CV
           </a>
           <a
-            href="https://www.linkedin.com/in/palmartin/"
+            href="https://www.linkedin.com/in/martin-pal-8b4212235/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-xl hover:text-secondary"
@@ -39,7 +39,7 @@ function Header() {
             <FaLinkedin />
           </a>
           <a
-            href="https://github.com/palmartin"
+            href="https://github.com/XY56L7"
             target="_blank"
             rel="noopener noreferrer"
             className="text-xl hover:text-secondary"
@@ -81,7 +81,7 @@ function Header() {
             </a>
             <div className="flex space-x-4">
               <a
-                href="https://www.linkedin.com/in/palmartin/"
+                href="https://www.linkedin.com/in/martin-pal-8b4212235/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xl hover:text-secondary"
@@ -89,7 +89,7 @@ function Header() {
                 <FaLinkedin />
               </a>
               <a
-                href="https://github.com/palmartin"
+                href="https://github.com/XY56L7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xl hover:text-secondary"

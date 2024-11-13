@@ -3,10 +3,10 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { FaPython, FaAngular, FaJsSquare, FaDatabase } from 'react-icons/fa';
+import { FaPython, FaAngular, FaJsSquare, FaDatabase,FaDocker } from 'react-icons/fa';
 import { SiCsharp, SiDotnet, SiDjango } from 'react-icons/si';
 
-type Tech = 'Python' | 'Django' | 'Angular' | 'JavaScript' | 'CSharp' | 'DotNet' | 'Database';
+type Tech = 'Python' | 'Django' | 'Angular' | 'JavaScript' | 'CSharp' | 'DotNet' | 'Database' | 'Docker';
 
 const techIcons: Record<Tech, JSX.Element> = {
   Python: <FaPython className="text-yellow-500" />,
@@ -16,6 +16,7 @@ const techIcons: Record<Tech, JSX.Element> = {
   CSharp: <SiCsharp className="text-purple-600" />,
   DotNet: <SiDotnet className="text-blue-600" />,
   Database: <FaDatabase className="text-blue-500" />,
+  Docker : <FaDocker className="text-blue-400" />
 };
 
 type Project = {
@@ -28,11 +29,11 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: 'Projekt 1',
-    description: 'Projekt 1 leírása...',
-    image: '/images/project1.jpg',
+    title: 'Szakdolgozat',
+    description: 'Energy Community Platform',
+    image: '/energy_community.jpg',
     link: 'https://project1.example.com',
-    technologies: ['Python', 'Django', 'Angular'],
+    technologies: ['Python', 'Django', 'Angular','Docker'],
   },
   // További projektek...
 ];

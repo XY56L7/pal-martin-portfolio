@@ -1,0 +1,112 @@
+{
+    "greeting": "Hi, I'm Martin Pál.",
+    "profession": "Full-stack developer.",
+    "about": "I am passionate about developing modern web applications and using the latest technologies.",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact",
+    "download_cv": "Download CV",
+    "technologies": "Technologies",
+    "see_more": "See more",
+    "education": "Education",
+    "skills": "Skills",
+    "send_message": "Send Message",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Submit",
+    "footer_text": "© 2023 Martin Pál. All rights reserved.",
+    "menu": "Menu",
+    "close": "Close",
+    "cv": "CV",
+    "language": {
+      "english": "English",
+      "hungarian": "Hungarian"
+    },
+    "navigation": {
+      "about": "About",
+      "projects": "Projects",
+      "experience": "Experience",
+      "contact": "Contact"
+    },
+    "about_section": {
+      "greeting": "Hi, I'm Martin Pál.",
+      "profession": "Full-stack developer.",
+      "description": "I am passionate about developing modern web applications and using the latest technologies."
+    },
+    "projects_section": {
+      "title": "Projects",
+      "description": "Here are some of my projects.",
+      "more_projects": "More Projects"
+    },
+    "experience_section": {
+      "title": "Experience",
+      "education": "Education"
+    },
+    "contact_section": {
+      "title": "Contact",
+      "description": "Feel free to reach out to me!"
+    },
+    "form": {
+      "name_placeholder": "Enter your name",
+      "email_placeholder": "Enter your email",
+      "message_placeholder": "Enter your message",
+      "submit_button": "Send"
+    },
+    "technologies_section": {
+      "title": "Technologies",
+      "description": "Technologies I've worked with:"
+    },
+    "experience_items": {
+      "bbraun": {
+        "company": "B. Braun Medical Ltd.",
+        "location": "1023 Budapest, Felhévízi utca 5",
+        "position": "Software Developer Intern",
+        "date": "Feb 2022 - Sept 2022",
+        "responsibilities": [
+          "Daily meetings with my team and mentor",
+          "Using JIRA to log my work",
+          "Solving problems and communicating with mentors",
+          "Compiling C files into Python or vice versa",
+          "Experience with Scrum: sprint planning, stand-ups",
+          "Managed project code versions using Git"
+        ]
+      },
+      "bosch": {
+        "company": "Robert Bosch Ltd.",
+        "location": "1103 Budapest, Gyömrői út 104",
+        "position": "Software Developer Intern",
+        "date": "Sept 2022 - Sept 2024",
+        "responsibilities": [
+          "Participated in the development of multiple projects, ensuring timely delivery and meeting project goals",
+          "Daily meetings with my team and mentor",
+          "Using Azure and JIRA to log my work",
+          "Solving problems and communicating with mentors",
+          "Developed user interfaces and features using Angular",
+          "Built and maintained backend services using ASP.NET Core",
+          "Used MSSQL and MongoDB databases",
+          "Fixed bugs on different projects",
+          "Reviewed colleagues' pull requests",
+          "Managed project code versions using Git"
+        ]
+      },
+      "obuda_university": {
+        "company": "Óbuda University, NIK",
+        "location": "1034 Budapest, Bécsi út 96/b",
+        "position": "Demonstrator",
+        "date": "Feb 2024 - Jun 2024",
+        "responsibilities": [
+          "Teaching the fundamentals of ASP.NET CORE"
+        ]
+      }
+    },
+    "education_items": {
+      "obuda_university": {
+        "institution": "Óbuda University, NIK",
+        "location": "1034 Budapest, Bécsi út 96/b",
+        "degree": "Bachelor of IT Engineering",
+        "date": "Sept 2020 - Present"
+      }
+    }
+  }
+  

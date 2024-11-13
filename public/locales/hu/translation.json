@@ -1,0 +1,112 @@
+{
+    "greeting": "Szia, Pál Martin vagyok.",
+    "profession": "Full-stack fejlesztő.",
+    "about": "Szenvedélyem a modern webalkalmazások fejlesztése és a legújabb technológiák használata.",
+    "projects": "Projektek",
+    "experience": "Tapasztalat",
+    "contact": "Kapcsolat",
+    "download_cv": "Önéletrajz letöltése",
+    "technologies": "Technológiák",
+    "see_more": "Tovább",
+    "education": "Oktatás",
+    "skills": "Készségek",
+    "send_message": "Üzenet küldése",
+    "name": "Név",
+    "email": "E-mail",
+    "message": "Üzenet",
+    "submit": "Küldés",
+    "footer_text": "© 2023 Pál Martin. Minden jog fenntartva.",
+    "menu": "Menü",
+    "close": "Bezárás",
+    "cv": "Önéletrajz",
+    "language": {
+      "english": "Angol",
+      "hungarian": "Magyar"
+    },
+    "navigation": {
+      "about": "Rólam",
+      "projects": "Projektek",
+      "experience": "Tapasztalat",
+      "contact": "Kapcsolat"
+    },
+    "about_section": {
+      "greeting": "Szia, Pál Martin vagyok.",
+      "profession": "Full-stack fejlesztő.",
+      "description": "Szenvedélyem a modern webalkalmazások fejlesztése és a legújabb technológiák használata."
+    },
+    "projects_section": {
+      "title": "Projektek",
+      "description": "Íme néhány projektem.",
+      "more_projects": "További Projektek"
+    },
+    "experience_section": {
+      "title": "Tapasztalat",
+      "education": "Oktatás"
+    },
+    "contact_section": {
+      "title": "Kapcsolat",
+      "description": "Keress bátran!"
+    },
+    "form": {
+      "name_placeholder": "Add meg a neved",
+      "email_placeholder": "Add meg az e-mail címed",
+      "message_placeholder": "Írd be az üzeneted",
+      "submit_button": "Küldés"
+    },
+    "technologies_section": {
+      "title": "Technológiák",
+      "description": "Technológiák, amelyekkel dolgoztam:"
+    },
+    "experience_items": {
+      "bbraun": {
+        "company": "B. Braun Medical Kft.",
+        "location": "1023 Budapest, Felhévízi utca 5",
+        "position": "Szoftverfejlesztő Gyakornok",
+        "date": "2022 Feb - 2022 Sept",
+        "responsibilities": [
+          "Napi megbeszélések a csapatommal és mentorommal",
+          "JIRA használata a munkák naplózásához",
+          "Problémák megoldása és kommunikáció a mentorokkal",
+          "C fájlok fordítása Pythonra vagy fordítva",
+          "Tapasztalat Scrum-mal: sprint tervezés, stand-upok",
+          "Projektkód verziók kezelése Git segítségével"
+        ]
+      },
+      "bosch": {
+        "company": "Robert Bosch Kft.",
+        "location": "1103 Budapest, Gyömrői út 104",
+        "position": "Szoftverfejlesztő Gyakornok",
+        "date": "2022 Sept - 2024 Sept",
+        "responsibilities": [
+          "Több projekt fejlesztésében való részvétel, a határidők és a projektcélok betartásával",
+          "Napi megbeszélések a csapatommal és mentorommal",
+          "Azure és JIRA használata a munkák naplózásához",
+          "Problémák megoldása és kommunikáció a mentorokkal",
+          "Felhasználói felületek és funkciók fejlesztése Angular segítségével",
+          "Backend szolgáltatások építése és karbantartása ASP.NET Core használatával",
+          "MSSQL és MongoDB adatbázisok használata",
+          "Hibák javítása különböző projekteken",
+          "Kollégák pull requestjeinek áttekintése",
+          "Projektkód verziók kezelése Git segítségével"
+        ]
+      },
+      "obuda_university": {
+        "company": "Óbuda University, NIK",
+        "location": "1034 Budapest, Bécsi út 96/b",
+        "position": "Demonstrátor",
+        "date": "2024 Feb - 2024 Jun",
+        "responsibilities": [
+          "Az ASP.NET CORE alapjainak oktatása"
+        ]
+      }
+    },
+    "education_items": {
+      "obuda_university": {
+        "institution": "Óbudai Egyetem, NIK",
+        "location": "1034 Budapest, Bécsi út 96/b",
+        "degree": "Mérnökinformatikus BSc",
+        "date": "2020 Sept - Jelenleg"
+      }
+    }
+  }
+  

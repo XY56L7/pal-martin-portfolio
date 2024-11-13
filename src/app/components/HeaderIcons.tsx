@@ -8,7 +8,7 @@ const HeaderIcons: React.FC = () => {
   return (
     <div className="md:hidden flex justify-center space-x-6 mt-8 relative">
     <a
-        href="https://www.linkedin.com/in/your-profile/"
+        href="https://www.linkedin.com/in/martin-pal-8b4212235/"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-lightBlue p-3 rounded-full text-teal hover:bg-teal hover:text-lightBlue transition-colors duration-300"
@@ -16,7 +16,7 @@ const HeaderIcons: React.FC = () => {
         <FaLinkedin size={24} />
       </a>
       <a
-        href="https://github.com/your-github"
+        href="https://github.com/XY56L7"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-lightBlue p-3 rounded-full text-teal hover:bg-teal hover:text-lightBlue transition-colors duration-300"
@@ -24,8 +24,8 @@ const HeaderIcons: React.FC = () => {
         <FaGithub size={24} />
       </a>
       <a
-        href="/path/to/your_cv.pdf"
-        className="bg-lightBlue p-3 rounded-full text-teal hover:bg-teal hover:text-lightBlue transition-colors duration-300"
+            href="/public/Pal_Martin_CV_PDF.pdf"
+            className="bg-lightBlue p-3 rounded-full text-teal hover:bg-teal hover:text-lightBlue transition-colors duration-300"
         download
       >
         <FaFileAlt size={24} />

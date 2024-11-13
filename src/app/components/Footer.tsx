@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
             <FaGithub size={24} />
           </a>
         </div>
-        <p>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Pál Martin. All rights reserved.</p>
       </div>
     </footer>
   );
