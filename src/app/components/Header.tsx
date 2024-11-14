@@ -24,11 +24,11 @@ function Header() {
             Contact
           </a>
           <a
-            href="/public/Pal_Martin_CV_PDF.pdf"
+            href="/Pal_Martin_CV_PDF.pdf"
             className="bg-secondary text-white px-4 py-2 rounded hover:bg-opacity-90"
             download
           >
-            Download CV
+            View CV
           </a>
           <a
             href="https://www.linkedin.com/in/martin-pal-8b4212235/"

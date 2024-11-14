@@ -24,9 +24,8 @@ const HeaderIcons: React.FC = () => {
         <FaGithub size={24} />
       </a>
       <a
-            href="/public/Pal_Martin_CV_PDF.pdf"
+            href="/Pal_Martin_CV_PDF.pdf"
             className="bg-lightBlue p-3 rounded-full text-teal hover:bg-teal hover:text-lightBlue transition-colors duration-300"
-        download
       >
         <FaFileAlt size={24} />
       </a>

@@ -8,11 +8,12 @@ const TopBar: React.FC = () => {
   return (
     <div className="hidden md:flex fixed top-0 right-0 h-16 bg-lightBlue text-teal items-center px-4 z-50">
       <a
-            href="/public/Pal_Martin_CV_PDF.pdf"
-            className="mr-4 bg-teal text-darkBlue px-4 py-2 rounded hover:bg-opacity-90"
-        download
+        href="/Pal_Martin_CV_PDF.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mr-4 bg-teal text-darkBlue px-4 py-2 rounded hover:bg-opacity-90"
       >
-        Download CV
+        View CV
       </a>
       <a
         href="https://www.linkedin.com/in/martin-pal-8b4212235/"
