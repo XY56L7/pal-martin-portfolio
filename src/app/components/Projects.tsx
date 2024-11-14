@@ -18,7 +18,7 @@ const techIcons: Record<Tech, JSX.Element> = {
   Database: <FaDatabase className="text-blue-500" />,
   Docker : <FaDocker className="text-blue-400" />,
   React : <FaReact className="text-blue-400" />,
-  Tailwind_CSS: <FaCss3Alt 4 className="text-cyan-400" />  // Added Tailwind CSS
+  Tailwind_CSS: <FaCss3Alt className="text-cyan-400" /> // Added Tailwind CSS
 
 };
 
