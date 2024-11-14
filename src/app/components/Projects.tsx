@@ -3,10 +3,10 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { FaPython, FaAngular, FaJsSquare, FaDatabase,FaDocker } from 'react-icons/fa';
+import { FaPython, FaAngular, FaJsSquare, FaDatabase,FaDocker,FaReact } from 'react-icons/fa';
 import { SiCsharp, SiDotnet, SiDjango } from 'react-icons/si';
 
-type Tech = 'Python' | 'Django' | 'Angular' | 'JavaScript' | 'CSharp' | 'DotNet' | 'Database' | 'Docker';
+type Tech = 'Python' | 'Django' | 'Angular' | 'JavaScript' | 'CSharp' | 'DotNet' | 'Database' | 'Docker' | 'React';
 
 const techIcons: Record<Tech, JSX.Element> = {
   Python: <FaPython className="text-yellow-500" />,
@@ -16,7 +16,9 @@ const techIcons: Record<Tech, JSX.Element> = {
   CSharp: <SiCsharp className="text-purple-600" />,
   DotNet: <SiDotnet className="text-blue-600" />,
   Database: <FaDatabase className="text-blue-500" />,
-  Docker : <FaDocker className="text-blue-400" />
+  Docker : <FaDocker className="text-blue-400" />,
+  React : <FaReact className="text-blue-400" />
+
 };
 
 type Project = {
@@ -32,9 +34,15 @@ const projects: Project[] = [
     title: 'Szakdolgozat',
     description: 'Energy Community Platform',
     image: '/energy_community.jpg',
-    link: 'https://project1.example.com',
+    link: 'https://github.com/XY56L7/Szakdolgozat_Projekt',
     technologies: ['Python', 'Django', 'Angular','Docker'],
-  },
+  },{
+    title: 'KasiTrans Kft.',
+    description: 'Egy fuvarozó cég honlapja',
+    image: '/kasitrans.jpg',
+    link: 'https://kasitrans.vercel.app/',
+    technologies: ['React'],
+  }
   // További projektek...
 ];
 
