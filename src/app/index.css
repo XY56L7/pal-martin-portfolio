@@ -42,3 +42,10 @@ button, .btn {
   left: 100%;
   margin-left: 0.5rem;
 }
+@media (min-width: 1024px) {
+  .project-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}

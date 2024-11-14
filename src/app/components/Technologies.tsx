@@ -1,4 +1,3 @@
-// src/components/Technologies.tsx
 "use client";
 
 import React from 'react';
@@ -9,6 +8,7 @@ import {
   FaJsSquare,
   FaDocker,
   FaWindows,
+  FaCss3Alt,
 } from 'react-icons/fa';
 import { SiDjango, SiMongodb, SiMicrosoftsqlserver, SiCsharp, SiDotnet } from 'react-icons/si';
 
@@ -25,6 +25,7 @@ const technologies = [
   { name: 'ASP.NET Core', icon: <SiDotnet size={48} className="text-blue-600" /> },
   { name: 'WPF', icon: <FaWindows size={48} className="text-blue-500" /> },
   { name: 'Docker', icon: <FaDocker size={48} className="text-blue-400" /> },
+  { name: 'Tailwind CSS', icon: <FaCss3Alt size={48} className="text-cyan-400" /> },  // Added Tailwind CSS
 ];
 
 const Technologies: React.FC = () => {
@@ -34,9 +35,9 @@ const Technologies: React.FC = () => {
         <h2 className="text-3xl font-bold mb-12 text-center">Technológiák</h2>
         <div className="flex flex-wrap justify-center items-center gap-8">
           {technologies.map((tech, index) => (
-            <div key={index} className="flex flex-col items-center w-24">
+            <div key={index} className="flex flex-col items-center w-24 p-4 bg-lightBlue rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105">
               {tech.icon}
-              <span className="mt-2 text-center text-sm">{tech.name}</span>
+              <span className="mt-2 text-center text-sm font-semibold text-white">{tech.name}</span>
             </div>
           ))}
         </div>

@@ -3,10 +3,10 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { FaPython, FaAngular, FaJsSquare, FaDatabase,FaDocker,FaReact } from 'react-icons/fa';
+import { FaPython, FaAngular, FaJsSquare, FaDatabase,FaDocker,FaReact, FaCss3Alt } from 'react-icons/fa';
 import { SiCsharp, SiDotnet, SiDjango } from 'react-icons/si';
 
-type Tech = 'Python' | 'Django' | 'Angular' | 'JavaScript' | 'CSharp' | 'DotNet' | 'Database' | 'Docker' | 'React';
+type Tech = 'Python' | 'Django' | 'Angular' | 'JavaScript' | 'CSharp' | 'DotNet' | 'Database' | 'Docker' | 'React' | 'Tailwind_CSS';
 
 const techIcons: Record<Tech, JSX.Element> = {
   Python: <FaPython className="text-yellow-500" />,
@@ -17,7 +17,8 @@ const techIcons: Record<Tech, JSX.Element> = {
   DotNet: <SiDotnet className="text-blue-600" />,
   Database: <FaDatabase className="text-blue-500" />,
   Docker : <FaDocker className="text-blue-400" />,
-  React : <FaReact className="text-blue-400" />
+  React : <FaReact className="text-blue-400" />,
+  Tailwind_CSS: <FaCss3Alt  className="text-cyan-400" />  // Added Tailwind CSS
 
 };
 
@@ -41,7 +42,7 @@ const projects: Project[] = [
     description: 'Egy fuvarozó cég honlapja',
     image: '/kasitrans.jpg',
     link: 'https://kasitrans.vercel.app/',
-    technologies: ['React'],
+    technologies: ['React','Tailwind_CSS'],
   }
   // További projektek...
 ];
@@ -55,13 +56,14 @@ const Projects: React.FC = () => {
           {projects.map((project, index) => (
             <div key={index} className="w-full md:w-1/2 mb-8">
               <div className="bg-darkBlue rounded-lg overflow-hidden shadow-lg mx-4">
-                <Image
+              <Image
                   src={project.image}
                   alt={project.title}
-                  width={600} // A kép méretének megfelelően módosítsd
-                  height={300}
-                  className="w-full h-48 object-cover"
+                  width={1200}  // Nagyobb felbontású kép, ami desktop verzióban élesebb
+                  height={600}  // Nagyobb magasság a jobb arányért
+                  className="w-full h-auto object-cover"  // Reszponzív, arányos megjelenítés
                 />
+
                 <div className="p-4 md:p-6">
                   <h3 className="text-xl font-bold mb-2 text-lightestSlate">{project.title}</h3>
                   <p className="text-slate mb-4">{project.description}</p>
