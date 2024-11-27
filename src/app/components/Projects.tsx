@@ -35,7 +35,7 @@ const projects: Project[] = [
     title: 'Szakdolgozat',
     description: 'Energy Community Platform',
     image: '/energy_community.jpg',
-    link: 'https://github.com/XY56L7/Szakdolgozat_Projekt',
+    link: 'https://enercom1.nik.uni-obuda.hu/',
     technologies: ['Python', 'Django', 'Angular','Docker'],
   },{
     title: 'KasiTrans Kft.',
@@ -43,6 +43,13 @@ const projects: Project[] = [
     image: '/kasitrans.jpg',
     link: 'https://kasitrans.vercel.app/',
     technologies: ['React','Tailwind_CSS'],
+  },
+  {
+    title: 'Rating App',
+    description: 'Applikáció a kiszolgálás értékelésére',
+    image: '/rating.JPG',
+    link: 'https://ratingapp-ten.vercel.app/',
+    technologies: ['React'],
   }
   // További projektek...
 ];

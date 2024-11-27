@@ -1,4 +1,3 @@
-// src/components/About.tsx
 "use client";
 
 import React from 'react';
@@ -8,14 +7,14 @@ const About: React.FC = () => {
   return (
     <section id="about" className="min-h-screen flex flex-col justify-center items-center px-8 bg-darkBlue text-lightestSlate">
       <div className="w-40 h-40 mb-6">
-      <Image
+        <Image
           src="/martin.jpg"
           alt="Pál Martin"
-          width={160}
-          height={160}
-          className="rounded-full object-cover"
-          />
-    </div>
+          width={320}
+          height={320}
+          className="rounded-lg object-cover"
+        />
+      </div>
       <h1 className="text-teal text-4xl md:text-6xl font-bold mb-4 text-center">
         Szia, Pál Martin vagyok.
       </h1>
