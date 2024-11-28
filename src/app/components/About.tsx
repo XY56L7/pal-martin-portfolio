@@ -6,12 +6,12 @@ import Image from 'next/image';
 const About: React.FC = () => {
   return (
     <section id="about" className="min-h-screen flex flex-col justify-center items-center px-8 bg-darkBlue text-lightestSlate">
-      <div className="w-40 h-40 mb-6">
+      <div className="w-40 h-40 md:w-60 md:h-60 lg:w-80 lg:h-80 mb-6">
         <Image
           src="/martin.jpg"
           alt="Pál Martin"
-          width={320}
-          height={320}
+          width={640} // Nagyobb méret a desktop eszközökhöz
+          height={640}
           className="rounded-lg object-cover"
         />
       </div>
