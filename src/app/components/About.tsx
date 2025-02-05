@@ -10,19 +10,19 @@ const About: React.FC = () => {
         <Image
           src="/martin.jpg"
           alt="Pál Martin"
-          width={640} // Nagyobb méret a desktop eszközökhöz
+          width={640} // Larger size for desktop devices
           height={640}
           className="rounded-lg object-cover"
         />
       </div>
       <h1 className="text-teal text-4xl md:text-6xl font-bold mb-4 text-center">
-        Szia, Pál Martin vagyok.
+        Hi, I'm Pál Martin.
       </h1>
       <h2 className="text-slate text-2xl md:text-4xl font-medium mb-4 text-center">
-        Full-stack fejlesztő.
+        Full-stack Developer.
       </h2>
       <p className="text-slate max-w-xl text-center">
-        Szenvedélyem a modern webalkalmazások fejlesztése és a legújabb technológiák használata.
+        I'm passionate about developing modern web applications and using the latest technologies.
       </p>
     </section>
   );

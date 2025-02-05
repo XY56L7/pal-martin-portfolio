@@ -74,7 +74,7 @@ const Experience: React.FC = () => {
     <section id="experience" className="py-20 bg-lightBlue text-darkBlue">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-12 text-center text-lightestSlate">
-          Tapasztalat
+          Experience
         </h2>
         <div className="space-y-8">
           {experiences.map((item, index) => (
@@ -94,7 +94,7 @@ const Experience: React.FC = () => {
           ))}
         </div>
         <h2 className="text-3xl font-bold mt-16 mb-12 text-center text-lightestSlate">
-          Oktatás
+          Study
         </h2>
         <div className="space-y-8">
           {education.map((item, index) => (
