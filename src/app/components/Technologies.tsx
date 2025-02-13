@@ -9,6 +9,7 @@ import {
   FaDocker,
   FaWindows,
   FaCss3Alt,
+  FaReact
 } from 'react-icons/fa';
 import { SiDjango, SiMongodb, SiMicrosoftsqlserver, SiCsharp, SiDotnet } from 'react-icons/si';
 
@@ -25,7 +26,9 @@ const technologies = [
   { name: 'ASP.NET Core', icon: <SiDotnet size={48} className="text-blue-600" /> },
   { name: 'WPF', icon: <FaWindows size={48} className="text-blue-500" /> },
   { name: 'Docker', icon: <FaDocker size={48} className="text-blue-400" /> },
-  { name: 'Tailwind CSS', icon: <FaCss3Alt size={48} className="text-cyan-400" /> },  // Added Tailwind CSS
+  { name: 'Tailwind CSS', icon: <FaCss3Alt size={48} className="text-cyan-400" /> },
+  { name: 'React', icon: <FaReact size={48} className="text-blue-600" />,}
+    
 ];
 
 const Technologies: React.FC = () => {

@@ -10,7 +10,7 @@ const About: React.FC = () => {
         <Image
           src="/martin.jpg"
           alt="Pál Martin"
-          width={640} // Larger size for desktop devices
+          width={640} 
           height={640}
           className="rounded-lg object-cover"
         />

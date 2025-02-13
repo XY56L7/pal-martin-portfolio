@@ -43,7 +43,7 @@ const projects: Project[] = [
     description: 'A webpage of a transporting company',
     image: '/kasitrans.jpg',
     link: 'https://kasitrans.vercel.app/',
-    technologies: ['React', 'Tailwind_CSS'], // Bootstrap hozzáadva
+    technologies: ['React', 'Tailwind_CSS'], 
   },
   {
     title: 'Rating App',
