@@ -32,11 +32,11 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: 'Thesis',
-    description: 'Energy Community Platform',
-    image: '/energy_community.jpg',
-    link: 'https://enercom1.nik.uni-obuda.hu/',
-    technologies: ['Python', 'Django', 'Angular', 'Docker', 'Bootstrap'],
+    title: 'Dog Trainer Project',
+    description: 'A website dedicated to a professional dog trainer',
+    image: '/dogtrainer.png',
+    link: 'https://lang-tamas-dog-trainer.vercel.app/',
+    technologies: ['React', 'Bootstrap'],
   },
   {
     title: 'KasiTrans Kft.',
