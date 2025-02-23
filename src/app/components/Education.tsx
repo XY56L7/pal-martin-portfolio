@@ -7,7 +7,7 @@ const Education = () => {
       <h2>Education</h2>
       <ul>
         <li>
-          <strong>Óbuda University</strong> - Bachelor of IT Engineer (2020-Present)
+          <strong>Óbuda University</strong> - Bachelor of IT Engineer (2020-2025)
         </li>
       </ul>
     </section>

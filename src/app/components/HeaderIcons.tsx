@@ -1,4 +1,3 @@
-// src/components/HeaderIcons.tsx
 "use client";
 
 import React from 'react';
@@ -7,11 +6,11 @@ import { FaLinkedin, FaGithub, FaFileAlt } from 'react-icons/fa';
 const HeaderIcons: React.FC = () => {
   return (
     <div className="md:hidden flex justify-center space-x-6 mt-8 relative">
-    <a
+      <a
         href="https://www.linkedin.com/in/martin-pal-8b4212235/"
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-lightBlue p-3 rounded-full text-teal hover:bg-teal hover:text-lightBlue transition-colors duration-300"
+        className="p-3 rounded-full text-teal transition-colors duration-300 hover:text-lightBlue"
       >
         <FaLinkedin size={24} />
       </a>
@@ -19,13 +18,13 @@ const HeaderIcons: React.FC = () => {
         href="https://github.com/XY56L7"
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-lightBlue p-3 rounded-full text-teal hover:bg-teal hover:text-lightBlue transition-colors duration-300"
+        className="p-3 rounded-full text-teal transition-colors duration-300 hover:text-lightBlue"
       >
         <FaGithub size={24} />
       </a>
       <a
-            href="/Pal_Martin_CV_PDF.pdf"
-            className="bg-lightBlue p-3 rounded-full text-teal hover:bg-teal hover:text-lightBlue transition-colors duration-300"
+        href="/Pal_Martin_CV_PDF.pdf"
+        className="p-3 rounded-full text-teal transition-colors duration-300 hover:text-lightBlue"
       >
         <FaFileAlt size={24} />
       </a>

@@ -58,11 +58,24 @@ const experiences: ExperienceItem[] = [
     position: 'Demonstrator',
     responsibilities: ['Teaching the fundamentals of ASP.NET CORE'],
   },
+  {
+    date: 'Jan 2025 - Present',
+    company: 'PwC Hungary Kft.',
+    location: 'Budapest, Bajcsy-Zsilinszky út 78, 1055',
+    position: 'Software Engineer',
+    responsibilities: [
+      'Managed project code versions using Git',
+      'Built and maintained backend services using ASP.NET Core, ensuring integration with databases',
+      'Daily meetings with my team and my mentor',
+      'Using Azure for my PRs'
+
+    ],
+  }
 ];
 
 const education: EducationItem[] = [
   {
-    date: 'Sept 2020 - Present',
+    date: 'Sept 2020 - Feb 2025',
     institution: 'Óbuda University, NIK',
     location: '1034 Budapest, Bécsi út 96/b',
     degree: 'Bachelor of IT Engineering',
@@ -71,9 +84,9 @@ const education: EducationItem[] = [
 
 const Experience: React.FC = () => {
   return (
-    <section id="experience" className="py-20 bg-lightBlue text-darkBlue">
+    <section id="experience" className="py-5 bg-lightBlue text-darkBlue">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-12 text-center text-lightestSlate">
+        <h2 className="text-3xl font-bold mb-8 text-center text-lightestSlate">
           Experience
         </h2>
         <div className="space-y-8">

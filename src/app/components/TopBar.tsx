@@ -1,4 +1,4 @@
-// src/components/TopBar.tsx
+// TopBar.tsx
 "use client";
 
 import React from 'react';
@@ -6,7 +6,12 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const TopBar: React.FC = () => {
   return (
-    <div className="hidden md:flex fixed top-0 right-0 h-16 bg-lightBlue text-teal items-center px-4 z-50">
+    <div className="
+      hidden md:flex 
+      fixed top-0 right-0 h-16 
+      bg-transparent md:bg-lightBlue
+      text-teal items-center px-4 z-50
+    ">
       <a
         href="/Pal_Martin_CV_PDF.pdf"
         target="_blank"
