@@ -1,4 +1,3 @@
-// src/components/Sidebar.tsx
 "use client";
 
 import React, { useState } from 'react';
@@ -16,7 +15,7 @@ const Sidebar: React.FC = () => {
   return (
     <>
       {/* Mobil navigációs sáv */}
-      <div className="md:hidden fixed top-0 left-0 right-0 bg-transparent text-teal flex items-center px-4 h-16 z-50">
+      <div className="md:hidden fixed top-0 left-0 right-0 bg-darkBlue text-teal flex items-center px-4 h-16 z-50">
         <div className="flex items-center justify-between w-full">
           {/* Menü gomb és cím */}
           <div className="flex items-center">
@@ -39,7 +38,7 @@ const Sidebar: React.FC = () => {
 
       {/* Mobil lenyitható menü */}
       {isOpen && (
-        <div className="md:hidden fixed top-16 left-0 right-0 bg-lightBlue text-teal flex flex-col items-center z-40">
+        <div className="md:hidden fixed top-16 left-0 right-0 bg-darkBlue text-teal flex flex-col items-center z-40">
           {navItems.map((item, index) => (
             <a
               key={index}

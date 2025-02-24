@@ -84,7 +84,7 @@ const education: EducationItem[] = [
 
 const Experience: React.FC = () => {
   return (
-    <section id="experience" className="py-5 bg-lightBlue text-darkBlue">
+    <section id="experience" className="py-0.5 bg-lightBlue text-darkBlue">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 text-center text-lightestSlate">
           Experience
