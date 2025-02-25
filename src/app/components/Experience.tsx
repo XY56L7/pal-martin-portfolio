@@ -92,10 +92,10 @@ const Experience: React.FC = () => {
         <div className="space-y-8">
           {experiences.map((item, index) => (
             <div key={index} className="bg-darkBlue rounded-lg p-6">
-              <h3 className="text-2xl font-semibold text-lightestSlate">
+              <h3 className="text-center text-2xl font-semibold text-lightestSlate mb-4">
                 {item.position} - {item.company}
               </h3>
-              <p className="text-slate">
+              <p className="text-slate text-center">
                 {item.date} | {item.location}
               </p>
               <ul className="list-disc list-inside mt-4 text-slate space-y-2">
@@ -109,7 +109,7 @@ const Experience: React.FC = () => {
         <h2 className="text-3xl font-bold mt-16 mb-12 text-center text-lightestSlate">
           Study
         </h2>
-        <div className="space-y-8">
+        <div className="space-y-8 mb-16">
           {education.map((item, index) => (
             <div key={index} className="bg-darkBlue rounded-lg p-6">
               <h3 className="text-2xl font-semibold text-lightestSlate">

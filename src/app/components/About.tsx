@@ -21,10 +21,10 @@ const About: React.FC = () => {
               className="rounded-lg object-cover"
             />
           </div>
-          <h1 className="text-teal text-4xl md:text-6xl font-bold mb-4 text-center">
+          <h1 className="text-teal text-4xl md:text-6xl font-bold mb-8 text-center">
             Hi, I'm Pál Martin.
           </h1>
-          <h2 className="text-slate text-2xl md:text-4xl font-medium mb-4 text-center">
+          <h2 className="text-slate text-2xl md:text-4xl font-medium mb-8 text-center">
             Full-stack Developer.
           </h2>
           <p className="text-slate max-w-xl text-center">
