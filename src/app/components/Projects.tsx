@@ -4,7 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { FaPython, FaAngular, FaJsSquare, FaDatabase, FaDocker, FaReact, FaCss3Alt } from 'react-icons/fa';
 import { SiCsharp, SiDotnet, SiDjango } from 'react-icons/si';
-import { BsBootstrap } from 'react-icons/bs'; // Bootstrap ikon importálása
+import { BsBootstrap } from 'react-icons/bs'; 
 
 type Tech = 'Python' | 'Django' | 'Angular' | 'JavaScript' | 'CSharp' | 'DotNet' | 'Database' | 'Docker' | 'React' | 'Tailwind_CSS' | 'Bootstrap';
 
@@ -19,7 +19,7 @@ const techIcons: Record<Tech, JSX.Element> = {
   Docker: <FaDocker className="text-blue-400 w-6 h-6" />,
   React: <FaReact className="text-blue-400 w-6 h-6" />,
   Tailwind_CSS: <FaCss3Alt className="text-cyan-400 w-6 h-6" />,
-  Bootstrap: <BsBootstrap className="text-purple-500 w-6 h-6" />, // Bootstrap ikon hozzáadása
+  Bootstrap: <BsBootstrap className="text-purple-500 w-6 h-6" />, 
 };
 
 type Project = {

@@ -6,7 +6,6 @@ import { FaLinkedin, FaGithub, FaFileAlt } from 'react-icons/fa';
 const HeaderIcons: React.FC = () => {
   return (
     <div className="md:hidden flex justify-center mt-5 relative">
-      {/* Card */}
       <div className="bg-darkBlue rounded-lg px-3 py-3 text-lightestSlate flex justify-center space-x-6">
         <a
           href="https://www.linkedin.com/in/martin-pal-8b4212235/"

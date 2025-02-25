@@ -1,7 +1,6 @@
-// src/app/components/Header.js
 "use client";
 
-import React, { useState } from 'react'; // Remove 'useEffect' if not used
+import React, { useState } from 'react'; 
 import { FaLinkedin, FaGithub, FaBars, FaTimes } from 'react-icons/fa';
 
 function Header() {
@@ -47,7 +46,6 @@ function Header() {
             <FaGithub />
           </a>
         </div>
-        {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button onClick={() => setNavOpen(!navOpen)}>
             {navOpen ? (
@@ -58,7 +56,6 @@ function Header() {
           </button>
         </div>
       </nav>
-      {/* Mobile Menu */}
       {navOpen && (
         <div className="md:hidden bg-primary">
           <div className="flex flex-col items-center space-y-4 py-4">

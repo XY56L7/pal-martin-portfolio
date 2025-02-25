@@ -10,7 +10,6 @@ const About: React.FC = () => {
       className="py-16 bg-lightBlue text-darkBlue" 
     >
       <div className="container mx-auto px-4">
-        {/* Card */}
         <div className="bg-darkBlue rounded-lg p-3 text-lightestSlate flex flex-col items-center">
           <div className="w-40 h-40 md:w-60 md:h-60 lg:w-80 lg:h-80 mb-6">
             <Image
