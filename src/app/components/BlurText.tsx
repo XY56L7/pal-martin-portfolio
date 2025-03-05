@@ -20,7 +20,7 @@ interface BlurTextProps {
 
 const BlurText = ({
   text = '',
-  delay = 200,
+  delay = 100,
   className = '',
   animateBy = 'words',
   direction = 'top',
@@ -39,14 +39,14 @@ const BlurText = ({
 
   const defaultFrom =
     direction === 'top'
-      ? { filter: 'blur(10px)', opacity: 0, transform: 'translate3d(0,-50px,0)' }
-      : { filter: 'blur(10px)', opacity: 0, transform: 'translate3d(0,50px,0)' };
+      ? { filter: 'blur(20px)', opacity: 0, transform: 'translate3d(0,-30px,0)' }
+      : { filter: 'blur(20px)', opacity: 0, transform: 'translate3d(0,30px,0)' };
 
   const defaultTo = [
     {
-      filter: 'blur(5px)',
-      opacity: 0.5,
-      transform: direction === 'top' ? 'translate3d(0,5px,0)' : 'translate3d(0,-5px,0)',
+      filter: 'blur(10px)',
+      opacity: 0.7,
+      transform: direction === 'top' ? 'translate3d(0,3px,0)' : 'translate3d(0,-3px,0)',
     },
     { filter: 'blur(0px)', opacity: 1, transform: 'translate3d(0,0,0)' },
   ];
@@ -91,7 +91,12 @@ const BlurText = ({
         }
         : animationFrom || defaultFrom,
       delay: i * delay,
-      config: { easing: easings.easeOutCubic },
+      config: { 
+        easing: easings.easeOutCubic,
+        tension: 300,
+        friction: 20,
+        mass: 0.5,
+      },
     }))
   );
 
