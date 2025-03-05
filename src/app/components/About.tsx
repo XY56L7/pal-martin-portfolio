@@ -3,6 +3,7 @@
 import React from 'react';
 import GradientText from './GradientText';
 import TiltedCard from './TiltedCard';
+import SpotlightCard from './SpotlightCard';
 
 const About: React.FC = () => {
   return (
@@ -11,7 +12,7 @@ const About: React.FC = () => {
       className="py-16 pb-1 bg-lightBlue text-darkBlue" 
     >
       <div className="container mx-auto px-4">
-        <div className="bg-darkBlue rounded-lg p-3 text-lightestSlate flex flex-col items-center">
+        <SpotlightCard className="text-lightestSlate flex flex-col items-center" spotlightColor="rgba(100, 255, 218, 0.3)">
           <div className="w-40 h-40 md:w-60 md:h-60 lg:w-80 lg:h-80 mb-6">
             <TiltedCard
               imageSrc="/martin.jpg"
@@ -41,7 +42,7 @@ const About: React.FC = () => {
               I'm passionate about developing modern web applications and using the latest technologies.
             </GradientText>
           </div>
-        </div>
+        </SpotlightCard>
       </div>
     </section>
   );
