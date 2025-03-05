@@ -3,6 +3,7 @@
 
 import React from 'react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import BlurText from './BlurText';
 
 const Footer: React.FC = () => {
   return (
@@ -26,7 +27,13 @@ const Footer: React.FC = () => {
             <FaGithub size={24} />
           </a>
         </div>
-        <p>&copy; {new Date().getFullYear()} Pál Martin. All rights reserved.</p>
+        <p>
+          <BlurText 
+            text={`© ${new Date().getFullYear()} Pál Martin. All rights reserved.`}
+            delay={100}
+            direction="bottom"
+          />
+        </p>
       </div>
     </footer>
   );

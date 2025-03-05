@@ -2,6 +2,8 @@
 "use client";
 
 import React from 'react';
+import BlurText from './BlurText';
+import { FaCheckCircle } from 'react-icons/fa';
 
 type ExperienceItem = {
   date: string;
@@ -84,39 +86,67 @@ const education: EducationItem[] = [
 
 const Experience: React.FC = () => {
   return (
-    <section id="experience" className="py-0.5 bg-lightBlue text-darkBlue">
+    <section id="experience" className="py-20 bg-lightBlue">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 text-center text-lightestSlate">
-          Experience
+          <BlurText text="Experience" delay={100} direction="bottom" />
         </h2>
         <div className="space-y-8">
           {experiences.map((item, index) => (
-            <div key={index} className="bg-darkBlue rounded-lg p-6">
+            <div key={index} className="bg-darkBlue rounded-lg p-6 transform transition-all duration-300 hover:shadow-xl hover:shadow-teal/20">
               <h3 className="text-center text-2xl font-semibold text-lightestSlate mb-4">
-                {item.position} - {item.company}
+                <BlurText 
+                  text={`${item.position} - ${item.company}`}
+                  delay={150 + index * 50}
+                  direction="bottom"
+                />
               </h3>
-              <p className="text-slate text-center">
-                {item.date} | {item.location}
+              <p className="text-slate text-center mb-6">
+                <BlurText 
+                  text={`${item.date} | ${item.location}`}
+                  delay={200 + index * 50}
+                  direction="bottom"
+                />
               </p>
-              <ul className="list-disc list-inside mt-4 text-slate space-y-2">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {item.responsibilities.map((resp, idx) => (
-                  <li key={idx}>{resp}</li>
+                  <div 
+                    key={idx} 
+                    className="flex items-start space-x-3 p-3 rounded-lg bg-lightBlue/10 transform transition-all duration-300 hover:bg-lightBlue/20"
+                  >
+                    <FaCheckCircle className="text-teal mt-1 flex-shrink-0" />
+                    <div className="flex-1">
+                      <BlurText 
+                        text={resp}
+                        delay={250 + index * 50 + idx * 30}
+                        direction="bottom"
+                      />
+                    </div>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </div>
           ))}
         </div>
         <h2 className="text-3xl font-bold mt-16 mb-12 text-center text-lightestSlate">
-          Study
+          <BlurText text="Study" delay={100} direction="bottom" />
         </h2>
         <div className="space-y-8 mb-16">
           {education.map((item, index) => (
-            <div key={index} className="bg-darkBlue rounded-lg p-6">
-              <h3 className="text-2xl font-semibold text-lightestSlate">
-                {item.degree} - {item.institution}
+            <div key={index} className="bg-darkBlue rounded-lg p-6 transform transition-all duration-300 hover:shadow-xl hover:shadow-teal/20">
+              <h3 className="text-2xl font-semibold text-lightestSlate text-center">
+                <BlurText 
+                  text={`${item.degree} - ${item.institution}`}
+                  delay={150 + index * 50}
+                  direction="bottom"
+                />
               </h3>
-              <p className="text-slate">
-                {item.date} | {item.location}
+              <p className="text-slate text-center mt-4">
+                <BlurText 
+                  text={`${item.date} | ${item.location}`}
+                  delay={200 + index * 50}
+                  direction="bottom"
+                />
               </p>
             </div>
           ))}

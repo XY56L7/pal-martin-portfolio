@@ -1,0 +1,8 @@
+.blur-text {
+  overflow: hidden;
+}
+
+.inline-block {
+  display: inline-block;
+  will-change: transform, filter, opacity;
+} 
