@@ -3,10 +3,10 @@
 import React from 'react';
 import Image from 'next/image';
 import { FaPython, FaAngular, FaJsSquare, FaDatabase, FaDocker, FaReact, FaCss3Alt } from 'react-icons/fa';
-import { SiCsharp, SiDotnet, SiDjango } from 'react-icons/si';
+import { SiCsharp, SiDotnet, SiDjango, SiThreedotjs } from 'react-icons/si';
 import { BsBootstrap } from 'react-icons/bs'; 
 
-type Tech = 'Python' | 'Django' | 'Angular' | 'JavaScript' | 'CSharp' | 'DotNet' | 'Database' | 'Docker' | 'React' | 'Tailwind_CSS' | 'Bootstrap';
+type Tech = 'Python' | 'Django' | 'Angular' | 'JavaScript' | 'CSharp' | 'DotNet' | 'Database' | 'Docker' | 'React' | 'Tailwind_CSS' | 'Bootstrap' | 'ThreeJS';
 
 const techIcons: Record<Tech, JSX.Element> = {
   Python: <FaPython className="text-yellow-500 w-6 h-6" />,
@@ -19,7 +19,8 @@ const techIcons: Record<Tech, JSX.Element> = {
   Docker: <FaDocker className="text-blue-400 w-6 h-6" />,
   React: <FaReact className="text-blue-400 w-6 h-6" />,
   Tailwind_CSS: <FaCss3Alt className="text-cyan-400 w-6 h-6" />,
-  Bootstrap: <BsBootstrap className="text-purple-500 w-6 h-6" />, 
+  Bootstrap: <BsBootstrap className="text-purple-500 w-6 h-6" />,
+  ThreeJS: <SiThreedotjs className="text-black w-6 h-6" />, 
 };
 
 type Project = {
@@ -58,6 +59,13 @@ const projects: Project[] = [
     image: '/RPS.png',
     link: 'https://rock-paper-scissor-sandy-five.vercel.app/',
     technologies: ['JavaScript', 'Bootstrap'],
+  },  
+  {
+    title: '3D hangman game',
+    description: '3D hangman game using three.js',
+    image: '/image.png',
+    link: 'https://3d-hangman.vercel.app/',
+    technologies: ['React', 'ThreeJS', 'Bootstrap'],
   },
 ];
 

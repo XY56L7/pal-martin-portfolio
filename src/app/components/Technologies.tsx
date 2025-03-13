@@ -11,7 +11,7 @@ import {
   FaCss3Alt,
   FaReact
 } from 'react-icons/fa';
-import { SiDjango, SiMongodb, SiMicrosoftsqlserver, SiCsharp, SiDotnet } from 'react-icons/si';
+import { SiDjango, SiMongodb, SiMicrosoftsqlserver, SiCsharp, SiDotnet, SiThreedotjs } from 'react-icons/si';
 import BlurText from './BlurText';
 
 const technologies = [
@@ -28,8 +28,8 @@ const technologies = [
   { name: 'WPF', icon: <FaWindows size={48} className="text-blue-500" /> },
   { name: 'Docker', icon: <FaDocker size={48} className="text-blue-400" /> },
   { name: 'Tailwind CSS', icon: <FaCss3Alt size={48} className="text-cyan-400" /> },
-  { name: 'React', icon: <FaReact size={48} className="text-blue-600" />,}
-    
+  { name: 'React', icon: <FaReact size={48} className="text-blue-600" /> },
+  { name: 'Three.js', icon: <SiThreedotjs size={48} className="text-black" /> },
 ];
 
 const Technologies: React.FC = () => {
