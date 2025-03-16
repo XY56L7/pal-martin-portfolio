@@ -66,7 +66,13 @@ const projects: Project[] = [
     image: '/image.png',
     link: 'https://3d-hangman.vercel.app/',
     technologies: ['React', 'ThreeJS', 'Bootstrap'],
-  },
+  }, {
+    title: 'Interview questions for frontend developers',
+    description: 'Prepare yourself for your interview and get the job easily',
+    image: '/ang.png',
+    link: 'https://angular-react-interview-questions.vercel.app/',
+    technologies: ['Angular', 'Bootstrap'],
+  }
 ];
 
 const Projects: React.FC = () => {
