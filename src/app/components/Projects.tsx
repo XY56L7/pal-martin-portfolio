@@ -69,7 +69,7 @@ const projects: Project[] = [
   }, {
     title: 'Interview questions for frontend developers',
     description: 'Prepare yourself for your interview and get the job easily',
-    image: '/ang.png',
+    image: '/ang.PNG',
     link: 'https://angular-react-interview-questions.vercel.app/',
     technologies: ['Angular', 'Bootstrap'],
   }
