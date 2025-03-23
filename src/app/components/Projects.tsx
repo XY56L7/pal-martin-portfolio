@@ -72,7 +72,14 @@ const projects: Project[] = [
     image: '/ang.PNG',
     link: 'https://angular-react-interview-questions.vercel.app/',
     technologies: ['Angular', 'Bootstrap'],
+  }, {
+    title: 'Learn German easily',
+    description: 'If you are learning German, this website is for you.',
+    image: '/ger.PNG',
+    link: '  https://german-cards-angular.vercel.app/',
+    technologies: ['Angular', 'Bootstrap'],
   }
+
 ];
 
 const Projects: React.FC = () => {
