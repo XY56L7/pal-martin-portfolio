@@ -12,6 +12,7 @@ import {
   FaReact
 } from 'react-icons/fa';
 import { SiDjango, SiMongodb, SiMicrosoftsqlserver, SiCsharp, SiDotnet, SiThreedotjs } from 'react-icons/si';
+import { useInView } from 'react-intersection-observer';
 import BlurText from './BlurText';
 
 const technologies = [
@@ -32,16 +33,49 @@ const technologies = [
   { name: 'Three.js', icon: <SiThreedotjs size={48} className="text-black" /> },
 ];
 
+// Animáció definíciója
+const techCardStyle = `
+  @keyframes slideInFade {
+    0% {
+      opacity: 0;
+      transform: translateY(100px) scale(0.8); /* Még nagyobb elmozdulás */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  .tech-card {
+    opacity: 0; /* Kezdetben láthatatlan */
+  }
+  .tech-card.visible {
+    animation: slideInFade 0.8s ease-out forwards; /* Animáció csak látható állapotban */
+  }
+`;
+
 const Technologies: React.FC = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Csak egyszer indul
+    threshold: 0.1, // Amikor a szekció 10%-a látható
+    rootMargin: '0px 0px -50px 0px', // Finomhangolás: 50px-el korábban indul
+  });
+
   return (
     <section id="technologies" className="py-20 bg-darkBlue text-lightestSlate">
+      <style>{techCardStyle}</style>
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-12 text-center">
           <BlurText text="Technologies" delay={100} direction="bottom" />
         </h2>
-        <div className="flex flex-wrap justify-center items-center gap-8">
+        <div ref={ref} className="flex flex-wrap justify-center items-center gap-8">
           {technologies.map((tech, index) => (
-            <div key={index} className="flex flex-col items-center w-32 h-32 p-4 bg-lightBlue rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105">
+            <div
+              key={index}
+              className={`flex flex-col items-center w-32 h-32 p-4 bg-lightBlue rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105 tech-card ${inView ? 'visible' : ''}`}
+              style={{
+                animationDelay: `${inView ? index * 0.25 : 0}s`, // 0.25s késleltetés elemként
+              }}
+            >
               <div className="flex items-center justify-center h-16">
                 {tech.icon}
               </div>

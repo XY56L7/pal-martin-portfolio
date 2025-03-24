@@ -1,9 +1,10 @@
-// src/components/Experience.tsx
 "use client";
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import BlurText from './BlurText';
 import { FaCheckCircle } from 'react-icons/fa';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 type ExperienceItem = {
   date: string;
@@ -70,7 +71,6 @@ const experiences: ExperienceItem[] = [
       'Built and maintained backend services using ASP.NET Core, ensuring integration with databases',
       'Daily meetings with my team and my mentor',
       'Using Azure for my PRs'
-
     ],
   }
 ];
@@ -85,6 +85,14 @@ const education: EducationItem[] = [
 ];
 
 const Experience: React.FC = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+    });
+  }, []);
+
   return (
     <section id="experience" className="py-20 bg-lightBlue">
       <div className="container mx-auto px-4">
@@ -93,7 +101,12 @@ const Experience: React.FC = () => {
         </h2>
         <div className="space-y-8">
           {experiences.map((item, index) => (
-            <div key={index} className="bg-darkBlue rounded-lg p-6 transform transition-all duration-300 hover:shadow-xl hover:shadow-teal/20">
+            <div
+              key={index}
+              data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}
+              data-aos-delay={index * 100}
+              className="bg-darkBlue rounded-lg p-6 transform transition-all duration-300 hover:shadow-xl hover:shadow-teal/20"
+            >
               <h3 className="text-center text-2xl font-semibold text-lightestSlate mb-4">
                 <BlurText 
                   text={`${item.position} - ${item.company}`}
@@ -133,7 +146,12 @@ const Experience: React.FC = () => {
         </h2>
         <div className="space-y-8 mb-16">
           {education.map((item, index) => (
-            <div key={index} className="bg-darkBlue rounded-lg p-6 transform transition-all duration-300 hover:shadow-xl hover:shadow-teal/20">
+            <div
+              key={index}
+              data-aos="fade-right"
+              data-aos-delay={index * 100}
+              className="bg-darkBlue rounded-lg p-6 transform transition-all duration-300 hover:shadow-xl hover:shadow-teal/20"
+            >
               <h3 className="text-2xl font-semibold text-lightestSlate text-center">
                 <BlurText 
                   text={`${item.degree} - ${item.institution}`}

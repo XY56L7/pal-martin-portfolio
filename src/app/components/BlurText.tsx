@@ -20,7 +20,7 @@ interface BlurTextProps {
 
 const BlurText = ({
   text = '',
-  delay = 100,
+  delay = 50, // Reduced from 100ms to 50ms for faster triggering
   className = '',
   animateBy = 'words',
   direction = 'top',
@@ -42,12 +42,8 @@ const BlurText = ({
       ? { filter: 'blur(20px)', opacity: 0, transform: 'translate3d(0,-30px,0)' }
       : { filter: 'blur(20px)', opacity: 0, transform: 'translate3d(0,30px,0)' };
 
+  // Simplified to a single step for faster animation
   const defaultTo = [
-    {
-      filter: 'blur(10px)',
-      opacity: 0.7,
-      transform: direction === 'top' ? 'translate3d(0,3px,0)' : 'translate3d(0,-3px,0)',
-    },
     { filter: 'blur(0px)', opacity: 1, transform: 'translate3d(0,0,0)' },
   ];
 
@@ -81,20 +77,20 @@ const BlurText = ({
       from: animationFrom || defaultFrom,
       to: inView
         ? async (next: (value: typeof defaultTo[0]) => void) => {
-          for (const step of (animationTo || defaultTo)) {
-            await next(step);
+            for (const step of (animationTo || defaultTo)) {
+              await next(step);
+            }
+            animatedCount.current += 1;
+            if (animatedCount.current === elements.length && onAnimationComplete) {
+              onAnimationComplete();
+            }
           }
-          animatedCount.current += 1;
-          if (animatedCount.current === elements.length && onAnimationComplete) {
-            onAnimationComplete();
-          }
-        }
         : animationFrom || defaultFrom,
-      delay: i * delay,
+      delay: i * delay, // Now 50ms per element
       config: { 
         easing: easings.easeOutCubic,
-        tension: 300,
-        friction: 20,
+        tension: 250, // Reduced from 300 for a snappier feel
+        friction: 15, // Reduced from 20 for faster settling
         mass: 0.5,
       },
     }))
@@ -129,4 +125,4 @@ const BlurText = ({
   );
 };
 
-export default BlurText; 
+export default BlurText;
